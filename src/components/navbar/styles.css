@@ -1,8 +1,23 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
 .logonav {
     width : 150px;
     height : 100px;
+    padding: 1rem;
 }
 
-.menu {}
+.menu {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 5rem;
+}
 
-.item {}
+.item {
+    display: flex;
+    padding: 1rem;
+    list-style: none;
+}

@@ -19,7 +19,7 @@ function App() {
             <a href= "">Ubicacion</a>
           </li>
           <li className = "item">
-            <a href= "">Contactanos</a>
+            <a href= "">Contacto</a>
           </li>
         </ul>
       </Navbar>
