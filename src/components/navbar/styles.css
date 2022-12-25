@@ -1,6 +1,9 @@
 .navbar {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
 }
 
 .logonav {
@@ -22,7 +25,7 @@
     list-style: none;
 }
 
-.img-carro {
+.img-cart {
     display: flex;
     width: 100px;
     height: 100px;

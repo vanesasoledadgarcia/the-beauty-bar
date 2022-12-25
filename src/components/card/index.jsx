@@ -14,7 +14,7 @@ const Card = ({ product }) => {
             </div>
             <div className = "card-button-container">
                 <button className = "card-button-minus"> - </button>
-                <input className = "card-input" type = "text" />
+                <input className = "card-input" type = "text" placeholder="0" />
                 <button className = "card-button-plus"> + </button>
             </div>
         </div>
