@@ -7,6 +7,12 @@
     margin: 2rem;
     padding: 1rem;
     max-width: 300px;
+    min-height: 590px;
+}
+
+.card:hover{
+    cursor: pointer;
+    min-height: 610px;
 }
 
 .card-image {

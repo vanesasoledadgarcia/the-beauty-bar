@@ -1,30 +1,28 @@
-import './App.css';
 import Navbar from './components/navbar';
-import Card from './components/card';
-import {PRODUCTS} from './constants/data/products';
 import { useState } from 'react';
 import Sidebar from './components/sidebar';
+import Router from '../src/router';
+import {Link} from 'react-router-dom';
+import './App.css';
 
-
-function App() {
+const App = () => {
   const [isOpen, setOpen] = useState(false);
   const [showProducts, setShowProducts] = useState(false);
 
   const onHandlerCart = () => {
   setOpen(!isOpen);
 }
-
   return (
-    <div className="container">
-      <Sidebar onClose = {onHandlerCart} isOpen ={isOpen}/>
+    <div className = "container">
+      <Sidebar onClose = {onHandlerCart} isOpen ={isOpen}>
+        <div className = "container-cart">
+          <Link to = '/cart' className = "button-cart">Comprar</Link>
+        </div>
+      </Sidebar>
       <Navbar numbersOfItems = {0} onHandlerCart = {onHandlerCart}/>
-      <div className = "products-container">
-        {PRODUCTS.map((product) => (
-            <Card product = {product} key = {product.name}/>
-        ))}
-      </div>
+      <Router/>
     </div>
-  );
+  )
 }
 
 export default App;
