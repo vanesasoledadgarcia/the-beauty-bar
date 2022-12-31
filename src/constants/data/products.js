@@ -23,5 +23,29 @@ export const PRODUCTS = [
         price: 2958.50,
         stock: 30,
     },
+    {
+        id: 4,
+        description: 'El esmalte de uñas Revlon Nail Enamel con su fórmula Chip Defiant™ cubre las uñas con un color maravillosamente suave. Con ShadeLock™ Technology resistente a la decoloración.',
+        image: 'https://farmacityar.vteximg.com.br/arquivos/ids/176625-600-600/3856_Esmalte-para-u%C3%B1as---Revlon_imagen-1.jpg?v=636674631354930000',
+        name: 'Esmalte para uñas Revlon',
+        price: 1122,
+        stock: 10,
+    },
+    {
+        id: 5,
+        description: 'El esmalte de uñas Revlon Nail Enamel con su fórmula Chip Defiant™ cubre las uñas con un color maravillosamente suave. Con ShadeLock™ Technology resistente a la decoloración.',
+        image: 'https://farmacityar.vteximg.com.br/arquivos/ids/176625-600-600/3856_Esmalte-para-u%C3%B1as---Revlon_imagen-1.jpg?v=636674631354930000',
+        name: 'Esmalte para uñas Revlon',
+        price: 1122,
+        stock: 10,
+    },
+    {
+        id: 6,
+        description: 'El esmalte de uñas Revlon Nail Enamel con su fórmula Chip Defiant™ cubre las uñas con un color maravillosamente suave. Con ShadeLock™ Technology resistente a la decoloración.',
+        image: 'https://farmacityar.vteximg.com.br/arquivos/ids/176625-600-600/3856_Esmalte-para-u%C3%B1as---Revlon_imagen-1.jpg?v=636674631354930000',
+        name: 'Esmalte para uñas Revlon',
+        price: 1122,
+        stock: 10,
+    },
     
 ]

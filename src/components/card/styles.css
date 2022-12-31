@@ -10,6 +10,19 @@
     min-height: 590px;
 }
 
+.maxCard {
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2rem;
+    padding: 1rem;
+    max-width: 1200px;
+    width: 80%;
+    min-height: 590px;
+}
+
 .card:hover{
     cursor: pointer;
     min-height: 610px;

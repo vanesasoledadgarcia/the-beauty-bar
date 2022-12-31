@@ -3,7 +3,7 @@ import './styles.css';
 
 const Cart = () => {
     return (
-        <div className = "container">
+        <div className = "cart-container">
             <h2>carrito</h2>
         </div>
     )
