@@ -1,22 +1,2 @@
-.container-cart {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1rem 0;
-}
 
-.button-cart {
-    cursor: pointer;
-    background-color: #f0f0f0;
-    padding: 1.2rem;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    color: #212121;
-}
 

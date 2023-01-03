@@ -1,10 +1,8 @@
-import Navbar from './components/navbar';
 import { useState, useContext } from 'react';
-import Sidebar from './components/sidebar';
 import Router from '../src/router';
-import {Link} from 'react-router-dom';
 import './App.css';
 import { CartProvider } from './context';
+import {Navbar, Sidebar, CartItem} from './components';
 
 const App = () => {
   const [isOpen, setOpen] = useState(false);
@@ -16,11 +14,7 @@ const App = () => {
   return (
     <div className = "container">
       <CartProvider>
-      <Sidebar onClose = {onHandlerCart} isOpen ={isOpen}>
-        <div className = "container-cart">
-          <Link to = '/cart' className = "button-cart">Comprar</Link>
-        </div>
-      </Sidebar>
+      <Sidebar onClose = {onHandlerCart} isOpen ={isOpen}/>
       <Navbar onHandlerCart = {onHandlerCart}/>
       <Router/>
       </CartProvider>
