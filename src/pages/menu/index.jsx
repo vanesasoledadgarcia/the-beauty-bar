@@ -3,6 +3,7 @@ import './styles.css';
 import Card from '../../components/card';
 import {PRODUCTS} from '../../constants/data/products';
 import {useNavigate} from 'react-router-dom';
+import { getFireStore, doc, getDoc } from 'firebase/firestore';
 
 const Menu = () => {
   const navigate = useNavigate();

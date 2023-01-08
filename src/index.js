@@ -5,6 +5,24 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from 'react-router-dom';
 
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyCi5dbstCALCBGMUHmmNvL1xpOh3smIouI",
+  authDomain: "the-beauty-bar-760b8.firebaseapp.com",
+  projectId: "the-beauty-bar-760b8",
+  storageBucket: "the-beauty-bar-760b8.appspot.com",
+  messagingSenderId: "805277844756",
+  appId: "1:805277844756:web:38f0e7c44379aaee7c2e01"
+};
+
+// Initialize Firebase
+initializeApp(firebaseConfig);
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
