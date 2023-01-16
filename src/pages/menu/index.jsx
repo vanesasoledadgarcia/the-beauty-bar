@@ -1,20 +1,18 @@
 import React from 'react';
 import './styles.css';
 import Card from '../../components/card';
-//import {PRODUCTS} from '../../constants/data/products';
 import {useNavigate} from 'react-router-dom';
-import { getFireStore, doc, getDoc } from 'firebase/firestore';
 import Loader from '../../components/loader';
-import { useState } from 'react';
-import { useEffect } from 'react';
+import { useState, useEffect, useContext  } from 'react';
 import { getFirestore, collection, getDocs } from 'firebase/firestore';
+import { CartContext } from '../../context';
 
 const Menu = () => {
   const [loading, setLoading] = useState(true);
-  const [products, setProducts] = useState([]);
+  const { products, setProducts } = useContext(CartContext);
   const navigate = useNavigate();
   const onHandlerSelect = (product) => {
-    navigate('/details/${product.id}', {state : product})
+    navigate('/details/${product.id}', { state: product})
   }
 
   useEffect (() => {

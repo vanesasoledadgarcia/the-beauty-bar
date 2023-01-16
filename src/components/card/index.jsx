@@ -9,7 +9,7 @@ const Card = ({ product, onSelect, type = 'minCard', descreaseQty, increaseQty, 
             <div className="card-content">
                 <h3 className = "card-name"> {name} </h3>
                 <p className = "card-description"> {description} </p>
-                <p className = "card-price"> {price} </p>
+                <p className = "card-price"> ${price} </p>
                 <p className = "card-stock"> {stock} in stock </p>
             </div>
             { type === 'maxCard' && (

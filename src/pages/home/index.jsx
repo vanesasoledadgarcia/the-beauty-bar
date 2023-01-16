@@ -8,8 +8,9 @@ const Home = () => {
     const {state} = useLocation();
     return (
         <div className = "container-img">
-            <Link to = '/menu'>IMAGEN</Link>
-            <img className = "home-img" src= {homeImg} alt="" />
+            <Link to = '/menu'>
+                <img className = "home-img" src= {homeImg} alt="" />
+            </Link>
         </div>
     )
 }
